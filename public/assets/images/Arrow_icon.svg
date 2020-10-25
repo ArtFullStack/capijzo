@@ -1,0 +1,12 @@
+<svg id="Arrow_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="16" height="16" fill="none" stroke="#3d3d3d" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_5" data-name="Mask Group 5" clip-path="url(#clip-path)">
+    <g id="arrow-down" transform="translate(3.333 6)">
+      <path id="Path_8" data-name="Path 8" d="M14.333,12,9.667,16.667,5,12" transform="translate(-5 -12)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
