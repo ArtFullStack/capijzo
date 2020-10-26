@@ -12,8 +12,10 @@
                         <div class="col-md-6 d-flex justify-content-end">
                             <div class="buttons">
                                 <div class="dropdown">
-                                    <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="/assets/images/sort_icon.svg" alt=""> Sort <img src="/assets/images/Arrow_icon.svg" alt="">
+                                    <button class="btn btn-default" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="/assets/images/sort_icon.svg" alt=""> Sort <img
+                                        src="/assets/images/Arrow_icon.svg" alt="">
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="#">Top Snippets</a>
@@ -38,29 +40,31 @@
                     </div>
                     <div class="row snippet-item py-4">
                         <div class="col-md-4 d-flex align-items-center">
-                           <p> <i class="fas fa-circle text-danger"></i> <span class="ml-3">Prospecting email script</span></p>
+                            <p><i class="fas fa-circle text-danger"></i> <span
+                                class="ml-3">Prospecting email script</span></p>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
                             <p><span>email prospecting </span></p>
                         </div>
-                        <div class="col-md-4  d-flex justify-content-end align-items-center">
+                        <div class="col-md-4 d-flex justify-content-end align-items-center snippetActions">
                             <button class="mr-2 btn btn-default btn-sm">+3 more</button>
                             <button class="mr-2 btn btn-default btn-sm">Linkedin</button>
                             <button class="mr-2 btn btn-default btn-sm">Facebook</button>
                             <button class="mr-2 btn btn-default btn-sm">Email</button>
                             <span class="ml-3">
-                                     <img src="/assets/images/dots3.svg" alt="">
-                                </span>
+                                 <img src="/assets/images/dots3.svg" alt="">
+                            </span>
                         </div>
                     </div>
                     <div class="row snippet-item  py-4">
                         <div class="col-md-4">
-                          <p>  <i class="fas fa-circle text-warning"></i> <span class="ml-3">Client connection request - linked in</span></p>
+                            <p><i class="fas fa-circle text-warning"></i> <span class="ml-3">Client connection request - linked in</span>
+                            </p>
                         </div>
                         <div class="col-md-4">
                             <p><span>client connection</span></p>
                         </div>
-                        <div class="col-md-4  d-flex justify-content-end align-items-center">
+                        <div class="col-md-4 d-flex justify-content-end align-items-center snippetActions">
                             <button class=" mr-2 btn btn-default btn-sm">Facebook</button>
                             <button class=" mr-2 btn btn-default btn-sm">Email</button>
                             <span class="ml-3">

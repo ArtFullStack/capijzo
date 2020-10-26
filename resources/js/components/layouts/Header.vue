@@ -8,7 +8,7 @@
         <form class="form-inline ml-3">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <button class="btn btn-navbar" type="submit">
+                    <button class="btn btn-navbar" type="button">
                         <i class="fas fa-search gray-icon"></i>
                     </button>
                 </div>
@@ -56,7 +56,7 @@
                 </div>
             </li>
 
-            <li class="nav-item dropdown px-3">
+            <li class="nav-item dropdown px-3 btn">
                 <a class="align-items-center" role="button" data-toggle="dropdown">
                     <img src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg" class="rounded-circle" alt="User Image" width="48">
                     <span class="hidden-xs px-2 user-name">Ezzeldeen Ahmed</span>

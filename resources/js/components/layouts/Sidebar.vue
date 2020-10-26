@@ -23,9 +23,31 @@
                                 <a class="nav-link">
                                     <i class="fas fa-circle text-danger"></i>
                                     <p class="ml-2">Prospecting</p>
-                                    <span>
-                                       <img src="/assets/images/dots3.svg" alt="">
+
+                                    <!--                                    <span>-->
+                                    <!--                                       <img src="/assets/images/dots3.svg" alt="">-->
+                                    <!--                                    </span>-->
+
+                                    <span class="dropdown">
+                                   <span type="button" id="categoryActions"
+                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="/assets/images/dots3.svg" alt="">
                                     </span>
+                                    <div class="dropdown-menu category-actions popup" aria-labelledby="categoryActions">
+                                        <a class="dropdown-item" href="#">
+                                            <img class="mr-2" src="/assets/images/edit-icon.svg">
+                                            Edit Category
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="mr-2" src="/assets/images/share-icon.svg">
+                                            Share Category
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="mr-2" src="/assets/images/delete-icon.svg">
+                                            Delete Category
+                                        </a>
+                                    </div>
+                                 </span>
                                 </a>
                             </li>
                             <li class="nav-item item-hover">
@@ -84,8 +106,22 @@
                                     <img src="/assets/images/label_icon.svg" alt="">
                                     <p class="ml-2">Email</p>
                                 </a>
-                                <span>
-                                  <img src="/assets/images/dots3.svg" alt="">
+                                <span class="dropdown">
+                                   <span type="button" id="labelActions"
+                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="/assets/images/dots3.svg" alt="">
+                                    </span>
+                                    <div class="dropdown-menu label-actions popup" aria-labelledby="labelActions">
+                                        <a class="dropdown-item" href="#"> <img class="mr-2"
+                                                                                src="/assets/images/edit-icon.svg"
+                                                                                alt=""> Edit Label</a>
+                                        <a class="dropdown-item" href="#"> <img class="mr-2"
+                                                                                src="/assets/images/share-icon.svg"
+                                                                                alt=""> Share Label</a>
+                                        <a class="dropdown-item" href="#"> <img class="mr-2"
+                                                                                src="/assets/images/delete-icon.svg"
+                                                                                alt=""> Delete Label</a>
+                                    </div>
                                  </span>
                             </li>
                             <li class="nav-item item-hover">

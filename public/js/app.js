@@ -2169,6 +2169,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Sidebar"
 });
@@ -2186,6 +2222,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../layouts/Header */ "./resources/js/components/layouts/Header.vue");
 /* harmony import */ var _layouts_Sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layouts/Sidebar */ "./resources/js/components/layouts/Sidebar.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -37922,7 +37962,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "input-group-prepend" }, [
               _c(
                 "button",
-                { staticClass: "btn btn-navbar", attrs: { type: "submit" } },
+                { staticClass: "btn btn-navbar", attrs: { type: "button" } },
                 [_c("i", { staticClass: "fas fa-search gray-icon" })]
               )
             ]),
@@ -38055,7 +38095,7 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
-          _c("li", { staticClass: "nav-item dropdown px-3" }, [
+          _c("li", { staticClass: "nav-item dropdown px-3 btn" }, [
             _c(
               "a",
               {
@@ -38199,10 +38239,91 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("p", { staticClass: "ml-2" }, [_vm._v("Prospecting")]),
                       _vm._v(" "),
-                      _c("span", [
-                        _c("img", {
-                          attrs: { src: "/assets/images/dots3.svg", alt: "" }
-                        })
+                      _c("span", { staticClass: "dropdown" }, [
+                        _c(
+                          "span",
+                          {
+                            attrs: {
+                              type: "button",
+                              id: "categoryActions",
+                              "data-toggle": "dropdown",
+                              "aria-haspopup": "true",
+                              "aria-expanded": "false"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/assets/images/dots3.svg",
+                                alt: ""
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "dropdown-menu category-actions popup",
+                            attrs: { "aria-labelledby": "categoryActions" }
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#" }
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "mr-2",
+                                  attrs: { src: "/assets/images/edit-icon.svg" }
+                                }),
+                                _vm._v(
+                                  "\n                                        Edit Category\n                                    "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#" }
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "mr-2",
+                                  attrs: {
+                                    src: "/assets/images/share-icon.svg"
+                                  }
+                                }),
+                                _vm._v(
+                                  "\n                                        Share Category\n                                    "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "dropdown-item",
+                                attrs: { href: "#" }
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: "mr-2",
+                                  attrs: {
+                                    src: "/assets/images/delete-icon.svg"
+                                  }
+                                }),
+                                _vm._v(
+                                  "\n                                        Delete Category\n                                    "
+                                )
+                              ]
+                            )
+                          ]
+                        )
                       ])
                     ])
                   ]),
@@ -38302,10 +38423,87 @@ var staticRenderFns = [
                       _c("p", { staticClass: "ml-2" }, [_vm._v("Email")])
                     ]),
                     _vm._v(" "),
-                    _c("span", [
-                      _c("img", {
-                        attrs: { src: "/assets/images/dots3.svg", alt: "" }
-                      })
+                    _c("span", { staticClass: "dropdown" }, [
+                      _c(
+                        "span",
+                        {
+                          attrs: {
+                            type: "button",
+                            id: "labelActions",
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: { src: "/assets/images/dots3.svg", alt: "" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "dropdown-menu label-actions popup",
+                          attrs: { "aria-labelledby": "labelActions" }
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [
+                              _c("img", {
+                                staticClass: "mr-2",
+                                attrs: {
+                                  src: "/assets/images/edit-icon.svg",
+                                  alt: ""
+                                }
+                              }),
+                              _vm._v(" Edit Label")
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [
+                              _c("img", {
+                                staticClass: "mr-2",
+                                attrs: {
+                                  src: "/assets/images/share-icon.svg",
+                                  alt: ""
+                                }
+                              }),
+                              _vm._v(" Share Label")
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [
+                              _c("img", {
+                                staticClass: "mr-2",
+                                attrs: {
+                                  src: "/assets/images/delete-icon.svg",
+                                  alt: ""
+                                }
+                              }),
+                              _vm._v(" Delete Label")
+                            ]
+                          )
+                        ]
+                      )
                     ])
                   ]),
                   _vm._v(" "),
@@ -38492,7 +38690,7 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "col-md-4  d-flex justify-content-end align-items-center"
+                  "col-md-4 d-flex justify-content-end align-items-center snippetActions"
               },
               [
                 _c("button", { staticClass: "mr-2 btn btn-default btn-sm" }, [
@@ -38539,7 +38737,7 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "col-md-4  d-flex justify-content-end align-items-center"
+                  "col-md-4 d-flex justify-content-end align-items-center snippetActions"
               },
               [
                 _c("button", { staticClass: " mr-2 btn btn-default btn-sm" }, [

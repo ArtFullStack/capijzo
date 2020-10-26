@@ -35934,7 +35934,7 @@ body:not(.sidebar-mini-md) .main-header {
 }
 
 .item-hover span:last-child {
-  right: 10px;
+  right: 50px;
   top: 5px;
 }
 
@@ -35980,5 +35980,13 @@ body:not(.sidebar-mini-md) .main-header {
 
 .buttons .dropdown-menu {
   border-radius: 10px;
+}
+
+.snippetActions span {
+  cursor: pointer;
+}
+
+.popup a img {
+  vertical-align: bottom;
 }
 
