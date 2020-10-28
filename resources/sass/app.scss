@@ -138,6 +138,7 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 .snippet-item p span {
     font-size: 20px;
 }
+
 .snippet-item button {
     border: none;
     border-radius: 5px;
@@ -167,19 +168,31 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .buttons .dropdown-menu {
-   border-radius: 10px;
+    border-radius: 10px;
 }
-.snippetActions span{
+
+.snippetActions span {
     cursor: pointer;
 }
 
-.popup a img{
+.popup {
+    border-radius: 10px;
+}
+
+.popup a img {
     vertical-align: bottom;
 }
-//.labelAction a span{
-//    vertical-align: middle;
-//}
+
 label:not(.form-check-label):not(.custom-file-label) {
     font-weight: normal;
 }
 
+
+.more-category .dropdown-item:hover, .dropdown-item:focus {
+    color: initial;
+    background-color: initial;
+}
+
+.more-category .dropdown-item button{
+    background-color: #F5F5F5;
+}

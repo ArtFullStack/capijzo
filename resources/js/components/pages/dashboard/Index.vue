@@ -17,12 +17,12 @@
                                         <img src="/assets/images/sort_icon.svg" alt=""> Sort <img
                                         src="/assets/images/Arrow_icon.svg" alt="">
                                     </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <div class="dropdown-menu filter-snippets"
+                                         aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="#">Top Snippets</a>
                                         <a class="dropdown-item" href="#">New Snippets</a>
                                     </div>
                                     <button class="btn btn-default add_snippet ml-3">+ Add Snippet</button>
-
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,18 @@
                             <p><span>email prospecting </span></p>
                         </div>
                         <div class="col-md-4 d-flex justify-content-end align-items-center snippetActions">
-                            <button class="mr-2 btn btn-default btn-sm">+3 more</button>
+                                <span class="dropdown">
+                                    <button id="moreCategory" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" class="mr-2 btn btn-default btn-sm">+3 more</button>
+                                    <div class="dropdown-menu more-category popup" aria-labelledby="moreCategory">
+                                        <div class="dropdown-item p-0" href="#">
+                                            <button class="btn btn-default btn-sm">Linkedin</button>
+                                            <button class="btn btn-default btn-sm">Facebook</button>
+                                            <button class="btn btn-default btn-sm">Twitter</button>
+                                        </div>
+                                    </div>
+                                 </span>
+
                             <button class="mr-2 btn btn-default btn-sm">Linkedin</button>
                             <button class="mr-2 btn btn-default btn-sm">Facebook</button>
                             <button class="mr-2 btn btn-default btn-sm">Email</button>
@@ -93,3 +104,18 @@
         },
     }
 </script>
+
+<style scoped>
+    .popup {
+        padding: 24px;
+    }
+
+    .filter-snippets .dropdown-item{
+        padding: 12px 24px;
+    }
+
+    .moreCategory button{
+        width: 88px;
+        height: 32px;
+    }
+</style>

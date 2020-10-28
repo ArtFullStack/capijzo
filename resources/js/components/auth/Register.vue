@@ -55,8 +55,8 @@
                         <div class="form-group text-left">
                             <label for="password">Password</label>
                             <div class="input-group password-group">
-                                <input type="password" class="form-control" id="password">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                <input :type="passwordFieldEye" class="form-control" id="password">
+                                <i class="fa fa-eye-slash" aria-hidden="true" @click="() => this.passwordFieldEye = this.passwordFieldEye == 'text' ? 'password' :  'text'"></i>
                             </div>
                         </div>
                         <router-link to="/login">
@@ -67,13 +67,14 @@
                 <div class="row">
                     <div class="col">
                         <p class="text-center new-here pt-5">
-                            New here?
+                            Already a member?
                             <router-link to="/login">
                                 <span>Login</span>
                             </router-link>
                         </p>
                     </div>
                 </div>
+                <Footer/>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -81,7 +82,18 @@
 </template>
 
 <script>
-    export default {}
+    import Footer from './Footer'
+
+    export default {
+        data() {
+            return {
+                passwordFieldEye: 'password'
+            }
+        },
+        components: {
+            Footer
+        }
+    }
 </script>
 
 <style scoped>
@@ -166,6 +178,7 @@
     .login-with .button-with button {
         height: 58px;
         border: none;
-        background-color: #F5F5F5
+        background-color: #F5F5F5;
+        border-radius: 10px;
     }
 </style>

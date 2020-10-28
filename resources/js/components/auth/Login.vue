@@ -55,11 +55,14 @@
                         </div>
                         <div class="form-group text-left">
                             <label for="password">Password</label>
-                            <div class="input-group password-group">
-                                <input type="password" class="form-control" id="password">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            <div class="input-group password-group mb-2">
+                                <input :type="passwordFieldEye" class="form-control" id="password">
+                                <i class="fa fa-eye-slash" aria-hidden="true"
+                                   @click="() => this.passwordFieldEye = this.passwordFieldEye == 'text' ? 'password' :  'text'"></i>
                             </div>
-                            <small id="forgot-password" class="form-text text-muted">Forgot password</small>
+                            <router-link to="/forgot-password">
+                                <span id="forgot-password" class="pt-2">Forgot password?</span>
+                            </router-link>
                         </div>
                         <router-link to="/dashboard">
                             <button type="button" id="login" class="btn btn-default">Log in</button>
@@ -76,6 +79,7 @@
                         </p>
                     </div>
                 </div>
+                <Footer/>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -83,7 +87,18 @@
 </template>
 
 <script>
-    export default {}
+    import Footer from './Footer'
+
+    export default {
+        data() {
+            return {
+                passwordFieldEye: 'password'
+            }
+        },
+        components: {
+            Footer
+        }
+    }
 </script>
 
 <style scoped>
@@ -136,6 +151,7 @@
 
     .new-here {
         color: #B8B8B8;
+        margin: 0;
     }
 
     .new-here span {
@@ -161,6 +177,10 @@
         cursor: pointer;
     }
 
+    #forgot-password {
+        color: #DB4C3F
+    }
+
     .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
         z-index: 0;
     }
@@ -168,6 +188,7 @@
     .login-with .button-with button {
         height: 58px;
         border: none;
-        background-color: #F5F5F5
+        background-color: #F5F5F5;
+        border-radius: 10px;;
     }
 </style>

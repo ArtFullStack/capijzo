@@ -1,6 +1,10 @@
 <template>
-
-
+    <div class="row">
+        <div class="col copyright">
+            <span>© Capijzo 2020</span>
+            <span>Contact Capijzo support</span>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -10,5 +14,15 @@
 </script>
 
 <style scoped>
+    .copyright {
+        margin: 100px 0 60px 0
+    }
 
+    .copyright span:first-child {
+        margin-right: 25px;
+    }
+
+    .copyright span:last-child {
+        margin-left: 25px;
+    }
 </style>
