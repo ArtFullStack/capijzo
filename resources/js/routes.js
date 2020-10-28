@@ -1,21 +1,22 @@
 import VueRouter from 'vue-router';
 import Dashboard from "./components/pages/dashboard";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 
 const router = new VueRouter({
 
     routes: [
         {
             path: '/',
-            component: Dashboard,
             redirect: '/login'
         },
         {
             path: '/login',
-            component: Dashboard
+            component: Login
         },
         {
             path: '/register',
-            component: Dashboard
+            component: Register
         },
         {
             path: '/dashboard',

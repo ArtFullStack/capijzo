@@ -179,4 +179,7 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 //.labelAction a span{
 //    vertical-align: middle;
 //}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: normal;
+}
 

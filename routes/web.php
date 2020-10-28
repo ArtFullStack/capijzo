@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-Route::any('/{any}', function () {
+
+Route::any('/{any?}', function () {
     return view('layouts.app');
 });
 

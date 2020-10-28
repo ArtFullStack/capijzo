@@ -35990,3 +35990,7 @@ body:not(.sidebar-mini-md) .main-header {
   vertical-align: bottom;
 }
 
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: normal;
+}
+
