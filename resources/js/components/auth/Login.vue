@@ -61,13 +61,19 @@
                             </div>
                             <small id="forgot-password" class="form-text text-muted">Forgot password</small>
                         </div>
-
-                        <button type="button" id="login" class="btn btn-default">Log in</button>
+                        <router-link to="/dashboard">
+                            <button type="button" id="login" class="btn btn-default">Log in</button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="text-center new-here">New here? <span>Create Account</span></p>
+                        <p class="text-center new-here pt-5">
+                            New here?
+                            <router-link to="/register">
+                                <span>Create Account</span>
+                            </router-link>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,12 +135,18 @@
     }
 
     .new-here {
+        color: #B8B8B8;
+    }
 
+    .new-here span {
+        color: #DB4C3F
     }
 
     .form-group input.form-control {
         height: 58px;
         border-radius: 10px;
+        border: none;
+        background-color: #F5F5F5;
     }
 
     .password-group {
