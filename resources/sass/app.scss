@@ -4,6 +4,8 @@
 // Variables
 @import 'variables';
 
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
 
@@ -22,6 +24,10 @@ body {
     color: #3D3D3D;
 }
 
+
+.dropdown-item.active, .dropdown-item:active {
+    background: initial;
+}
 
 [class*='sidebar-light'] .brand-link {
     border-bottom: none;
@@ -193,6 +199,53 @@ label:not(.form-check-label):not(.custom-file-label) {
     background-color: initial;
 }
 
-.more-category .dropdown-item button{
+.more-category .dropdown-item button {
     background-color: #F5F5F5;
+}
+
+.multiselect .multiselect__select {
+    height: 58px;
+}
+
+.multiselect .multiselect__tags {
+    border: none;
+    display: inline-block;
+    height: 58px;
+    line-height: 38px;
+}
+
+.multiselect .multiselect__tags-wrap {
+    display: block;
+}
+
+.multiselect .multiselect__tags-wrap .multiselect__tag {
+    margin: 0 10px 0 0;
+    padding: 15px 10px;
+    background-color: #F5F5F5;
+    color: #3D3D3D;
+    border-radius: 10px;
+}
+
+.multiselect__tag-icon:hover {
+    background: #369a6e;
+}
+
+.multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon {
+    position: initial;
+    line-height: 0;
+}
+
+.multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:after {
+    color: #3D3D3D;
+
+}
+
+.multiselect .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:hover {
+    background-color: #F5F5F5;
+    color: #3D3D3D;
+}
+
+.multiselect__option--highlight {
+    background-color: #F5F5F5;
+    color: #3D3D3D;
 }

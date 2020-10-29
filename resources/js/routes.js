@@ -3,6 +3,7 @@ import Dashboard from "./components/pages/dashboard";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import ForgotPassword from "./components/auth/ForgotPassword";
+import AddSnippet from "./components/pages/snippet/Add";
 import AddCategory from "./components/pages/category/Add";
 import EditCategory from "./components/pages/category/Edit";
 import ShareCategory from "./components/pages/category/Share";
@@ -34,6 +35,10 @@ const router = new VueRouter({
         {
             path: '/dashboard',
             component: Dashboard
+        },
+        {
+            path: '/add-snippet',
+            component: AddSnippet
         },
         {
             path: '/add-category',

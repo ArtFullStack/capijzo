@@ -153,7 +153,7 @@
         display: none;
         border: 1px solid;
         border-radius: 50%;
-        left: -4px;
+        left: -5px;
         top: -5px;
         position: absolute;
         cursor: pointer;

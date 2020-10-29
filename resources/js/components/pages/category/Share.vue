@@ -230,27 +230,6 @@
         border-radius: 20px
     }
 
-    i.fas.fa-circle {
-        position: relative;
-    }
-
-    i.fas.fa-circle:after {
-        width: 47px;
-        height: 47px;
-        content: '';
-        display: none;
-        border: 1px solid;
-        border-radius: 50%;
-        left: -4px;
-        top: -5px;
-        position: absolute;
-        cursor: pointer;
-    }
-
-    i.fas.fa-circle:hover:after {
-        display: block;
-    }
-
     .members .member {
         margin-top: 25px;
     }
