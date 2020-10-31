@@ -15,6 +15,8 @@
     <!-- Fonts -->
 {{--    <link rel="dns-prefetch" href="//fonts.gstatic.com">--}}
     <!-- Styles -->
+    <link rel="icon" href="assets/images/Capijzo-Logo.svg">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 {{--    <div id="app">--}}
