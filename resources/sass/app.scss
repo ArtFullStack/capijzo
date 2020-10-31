@@ -24,6 +24,15 @@ body {
     color: #3D3D3D;
 }
 
+a {
+    color: #3D3D3D;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
 
 .dropdown-item.active, .dropdown-item:active {
     background: initial;
@@ -71,6 +80,13 @@ body {
     width: 670px;
     height: 58px;
     background: #f5f5f5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-btn {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .fa-plus.red-icon {
@@ -94,6 +110,10 @@ body {
     background: #f5f5f5;
 }
 
+.r-soon {
+    font-size: 14px;
+    color: #B8B8B8
+}
 
 .main-sidebar .brand-link {
     height: 88px;
@@ -177,12 +197,50 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
     border-radius: 10px;
 }
 
+.dropdown-menu-lg .dropdown-item {
+    padding: 10px 25px;
+}
+
+.dropdown-item {
+    padding: 12px 24px;
+}
+
 .snippetActions span {
     cursor: pointer;
 }
 
 .popup {
     border-radius: 10px;
+}
+
+.notify-popup {
+    width: 466px;
+    height: 411px;
+}
+
+.notify-popup .dropdown-content {
+    width: 466px;
+    height: 411px;
+}
+
+.productivity-popup {
+    width: 680px;
+    height: 411px;
+}
+
+.productivity-popup .productivity-popup-header-title {
+    font-size: 20px;
+}
+
+.productivity-popup .score {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+.productivity-popup .score .score-value {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .popup a img {
@@ -203,6 +261,13 @@ label:not(.form-check-label):not(.custom-file-label) {
     background-color: #F5F5F5;
 }
 
+.form-group .form-control, .multiselect {
+    height: 58px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+}
+
 .multiselect .multiselect__select {
     height: 58px;
 }
@@ -214,16 +279,32 @@ label:not(.form-check-label):not(.custom-file-label) {
     line-height: 38px;
 }
 
+.multiselect .multiselect__single {
+    border: none;
+    line-height: 38px;
+}
+
 .multiselect .multiselect__tags-wrap {
     display: block;
 }
 
 .multiselect .multiselect__tags-wrap .multiselect__tag {
     margin: 0 10px 0 0;
-    padding: 15px 10px;
+    padding: 10px;
     background-color: #F5F5F5;
     color: #3D3D3D;
     border-radius: 10px;
+    font-size: 16px;
+}
+
+.multiselect .multiselect__tags-wrap .multiselect__tag:before {
+    content: "";
+    display: inline-block;
+    background-image: url(/assets/images/label_icon.svg);
+    width: 30px;
+    height: 23px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
 }
 
 .multiselect__tag-icon:hover {
@@ -245,7 +326,71 @@ label:not(.form-check-label):not(.custom-file-label) {
     color: #3D3D3D;
 }
 
+.multiselect__option {
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
 .multiselect__option--highlight {
     background-color: #F5F5F5;
     color: #3D3D3D;
+}
+
+.multiselect__option--selected.multiselect__option--highlight {
+    background-color: #F5F5F5;
+    color: #3D3D3D;
+}
+
+.multiselect__option--selected {
+    font-weight: normal;
+}
+.default-tabs {
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid #B8B8B8;
+    &__item {
+        display: inline-block;
+        padding: 20px 0;
+        text-align: left;
+        font-size: 16px;
+        width: 110px;
+        letter-spacing: 0.8px;
+        color: gray;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        transition: all 0.25s;
+        &_active {
+            color: black;
+        }
+        &:hover {
+            color: black;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__active-line {
+        position: absolute;
+        bottom: -5px;
+        width: 110px !important;
+        left: 0;
+        height: 8px;
+        background-image: url('/assets/images/Rectangle 119.svg');
+        background-repeat: no-repeat;
+        transform: translateX(0px);
+        transition: transform 0.4s ease, width 0.4s ease;
+    }
+}
+.content {
+    margin-top: 30px;
+    font-size: 20px;
 }

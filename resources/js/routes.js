@@ -4,6 +4,9 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import AddSnippet from "./components/pages/snippet/Add";
+import EditSnippet from "./components/pages/snippet/Edit";
+import ShareSnippet from "./components/pages/snippet/Share";
+import DeleteSnippet from "./components/pages/snippet/Delete";
 import AddCategory from "./components/pages/category/Add";
 import EditCategory from "./components/pages/category/Edit";
 import ShareCategory from "./components/pages/category/Share";
@@ -39,6 +42,18 @@ const router = new VueRouter({
         {
             path: '/add-snippet',
             component: AddSnippet
+        },
+        {
+            path: '/edit-snippet',
+            component: EditSnippet
+        },
+        {
+            path: '/share-snippet',
+            component: ShareSnippet
+        },
+        {
+            path: '/delete-snippet',
+            component: DeleteSnippet
         },
         {
             path: '/add-category',

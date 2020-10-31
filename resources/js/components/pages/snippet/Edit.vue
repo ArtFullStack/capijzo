@@ -7,7 +7,7 @@
                 <div class="container-fluid p-5">
                     <div class="row mb-5">
                         <div class="col-md-6">
-                            <h1 class="m-0 text-dark">Add a Snippet</h1>
+                            <h1 class="m-0 text-dark">Edit a Snippet</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="row mt-5">
                                     <div class="col-md-6 pr-4">
-                                        <label for="addCategory">Add Category</label>
+                                        <label for="addCategory">Edit Category</label>
                                         <Multiselect
                                             id="addCategory"
                                             v-model="categories.value"
@@ -69,7 +69,8 @@
                                             track-by="value"
                                             :options="labels.options"
                                             :multiple="true"
-                                            :taggable="true"/>
+                                            :taggable="true"
+                                        />
                                     </div>
                                 </div>
                             </div>

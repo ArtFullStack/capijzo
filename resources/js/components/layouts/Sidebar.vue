@@ -336,12 +336,3 @@
     }
 </script>
 
-<style scoped>
-    .label-actions .dropdown-item {
-        padding: 12px 24px;
-    }
-
-    .category-actions .dropdown-item {
-        padding: 12px 24px;
-    }
-</style>

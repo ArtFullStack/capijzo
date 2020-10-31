@@ -8,11 +8,12 @@
         <form class="form-inline ml-3">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <button class="btn btn-navbar" type="button">
+                    <button class="btn btn-navbar search-btn" type="button">
                         <i class="fas fa-search gray-icon"></i>
                     </button>
                 </div>
-                <input class="form-control form-control-navbar" type="search" id="search-input" placeholder="Search snippets, labels and categories" aria-label="Search">
+                <input class="form-control form-control-navbar" type="search" id="search-input"
+                       placeholder="Search snippets, labels and categories" aria-label="Search">
             </div>
         </form>
 
@@ -24,8 +25,61 @@
                     <i class="far fa-clock"></i>
                     <span class="badge badge-danger navbar-badge">3</span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                     sdfds
+                <div class="dropdown-menu dropdown-menu-right popup productivity-popup pt-0"
+                     @click="(e) =>  e.stopPropagation()">
+                    <div class="dropdown-content p-4">
+                        <div class="productivity-popup-header d-flex justify-content-between">
+                            <p class="productivity-popup-header-title">Your Productivity</p>
+                            <p class="text-danger">Productivity Settings</p>
+                        </div>
+                        <div class="scores d-flex justify-content-between">
+                            <div class="score">
+                                <p class="score-label">Total hours saved</p>
+                                <p class="score-value">23.4 Hours</p>
+                            </div>
+                            <div class="score">
+                                <p class="score-label">Typing speed</p>
+                                <p class="score-value">43 WPM</p>
+                            </div>
+                            <div class="score">
+                                <p class="score-label">Inserted Words</p>
+                                <p class="score-value">108.5 K</p>
+                            </div>
+                        </div>
+                        <tabs
+                            :tabs="tabs"
+                            :currentTab="currentTab"
+                            :wrapper-class="'default-tabs'"
+                            :tab-class="'default-tabs__item'"
+                            :tab-active-class="'default-tabs__item_active'"
+                            :line-class="'default-tabs__active-line'"
+                            @onClick="handleClick"
+                        />
+
+                        <div class="content">
+                            <div v-if="currentTab === 'daily'">
+                                <div class="daily-content d-flex justify-content-between">
+                                    <div class="daily">
+                                        <p class="score-label">Saved time</p>
+                                        <p class="score-value">45 Minutes</p>
+                                    </div>
+                                    <div class="daily">
+                                        <p class="score-label">Words per minute</p>
+                                        <p class="score-value">42 WPM</p>
+                                    </div>
+                                    <div class="daily">
+                                        <p class="score-label">Inserted words</p>
+                                        <p class="score-value">108.5 K</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-if="currentTab === 'weekly'">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </li>
             <!-- Notifications Dropdown Menu -->
@@ -34,51 +88,101 @@
                     <i class="far fa-bell"></i>
                     <span class="badge badge-danger navbar-badge">15</span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                    <span class="dropdown-item dropdown-header">15 Notifications</span>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-envelope mr-2"></i> 4 new messages
-                        <span class="float-right text-muted text-sm">3 mins</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-users mr-2"></i> 8 friend requests
-                        <span class="float-right text-muted text-sm">12 hours</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-file mr-2"></i> 3 new reports
-                        <span class="float-right text-muted text-sm">2 days</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                <div class="dropdown-menu dropdown-menu-right popup notify-popup">
+                    <div class="dropdown-content p-4 d-flex justify-content-center align-items-center">
+                        <div class="no-notify text-center">
+                            <img src="/assets/images/bell-group-icon.svg" alt="">
+                            <h3>All Caught Up!</h3>
+                            <p>You have no notifications</p>
+                        </div>
+                    </div>
                 </div>
             </li>
 
             <li class="nav-item dropdown px-3 btn">
                 <a class="align-items-center" role="button" data-toggle="dropdown">
-                    <img src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg" class="rounded-circle" alt="User Image" width="48">
+                    <img
+                        src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg"
+                        class="rounded-circle" alt="User Image" width="48">
                     <span class="hidden-xs px-2 user-name">Ezzeldeen Ahmed</span>
                     <img src="/assets/images/Arrow_icon.svg" alt="">
                 </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-md">
+                <div class="dropdown-menu dropdown-menu-left dropdown-menu-lg popup">
                     <a href="#" class="dropdown-item">
-                        <i class="fas fa-cog mr-2"></i>
-                        Settings
+                        <img src="/assets/images/Setting_icon.svg" alt="">
+                        <span class="ml-3">Settings</span>
                     </a>
                     <a href="#" class="dropdown-item">
-                        <i class="fas fa-sync-alt mr-2"></i>
-                        Sync
+                        <img src="/assets/images/Sync_icon.svg" alt="">
+                        <span class="ml-3">Sync</span>
                     </a>
                     <a href="#" class="dropdown-item">
-                        <i class="fas fa-chart-line mr-2"></i>
-                        View Activity Log
+                        <img src="/assets/images/Activity_icon.svg" alt="">
+                        <span class="ml-3">View Activity Log</span>
                     </a>
                     <a href="#" class="dropdown-item">
                         <div class="dropdown-divider"></div>
                     </a>
-
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/Premium_icon.svg" alt="">
+                        <span class="ml-3 text-danger">Capijzo Premium</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/Business_icon.svg" alt="">
+                        <span class="ml-3">Capijzo Business</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="dropdown-divider"></div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/Template_icon.svg" alt="">
+                        <span class="ml-3">Template</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/Blog_icon.svg" alt="">
+                        <span class="ml-3">Blog</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/Support_icon.svg" alt="">
+                        <span class="ml-3">Support</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="dropdown-divider"></div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="/assets/images/logout-icon.svg" alt="">
+                        <span class="ml-3">Log out</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="dropdown-divider"></div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <p>Download</p>
+                        <span class="r-soon">Releasing soon</span>
+                        <div class="app-icons d-flex justify-content-between mt-3">
+                            <span>
+                                <img src="/assets/images/Chrome.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="/assets/images/Firefox.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="/assets/images/Outlook.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="/assets/images/Android.svg" alt="">
+                            </span>
+                            <span>
+                                <img src="/assets/images/Apple.svg" alt="">
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <div class="dropdown-divider"></div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        App Version 1.01
+                    </a>
                 </div>
             </li>
         </ul>
@@ -86,8 +190,28 @@
 </template>
 
 <script>
+    import Tabs from 'vue-tabs-with-active-line';
+
     export default {
-        name: "Header"
+        data() {
+            return {
+                tabs: [
+                    {title: 'Daily', value: 'daily'},
+                    {title: 'Weekly', value: 'weekly'},
+                ],
+                currentTab: 'daily'
+            }
+        },
+
+        components: {
+            Tabs,
+        },
+
+        methods: {
+            handleClick(newTab) {
+                this.currentTab = newTab;
+            },
+        },
     }
 </script>
 

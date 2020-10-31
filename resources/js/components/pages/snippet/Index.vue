@@ -41,8 +41,10 @@
                 </div>
                 <div class="row snippet-item py-4">
                     <div class="col-md-4 d-flex align-items-center">
-                        <p><i class="fas fa-circle text-danger"></i> <span
-                            class="ml-3">Prospecting email script</span></p>
+                        <p>
+                            <i class="fas fa-circle text-danger"></i>
+                            <span class="ml-3">Prospecting email script</span>
+                        </p>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
                         <p><span>email prospecting </span></p>
@@ -52,7 +54,7 @@
                                     <button id="moreCategory" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false" class="mr-2 btn btn-default btn-sm">+3 more</button>
                                     <div class="dropdown-menu more-category popup" aria-labelledby="moreCategory">
-                                        <div class="dropdown-item p-0" href="#">
+                                        <div class="dropdown-item" href="#">
                                             <button class="btn btn-default btn-sm">Linkedin</button>
                                             <button class="btn btn-default btn-sm">Facebook</button>
                                             <button class="btn btn-default btn-sm">Twitter</button>
@@ -63,9 +65,50 @@
                         <button class="mr-2 btn btn-default btn-sm">Linkedin</button>
                         <button class="mr-2 btn btn-default btn-sm">Facebook</button>
                         <button class="mr-2 btn btn-default btn-sm">Email</button>
-                        <span class="ml-3">
-                                 <img src="/assets/images/dots3.svg" alt="">
+                        <div class="btn-group dropleft ml-3">
+                           <span type="button dropleft" class="snippetActions"
+                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/images/dots3.svg" alt="">
                             </span>
+                            <div class="dropdown-menu snippet-actions popup" aria-labelledby="snippetActions">
+                                    <router-link to="/edit-snippet">
+                                        <a class="dropdown-item" href="#">
+                                            <img class="mr-2" src="/assets/images/edit-icon.svg">
+                                        Edit Snippet
+                                        </a>
+                                    </router-link>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/duplicate-icon.svg">
+                                     <router-link to="/edit-snippet">
+                                         Duplicate Snippet
+                                     </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/edit-icon-2.svg">
+                                    <router-link to="/edit-snippet">
+                                        Edit Category
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/label_icon.svg">
+                                    <router-link to="/edit-snippet">
+                                        Edit Label
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/share-icon.svg">
+                                    <router-link to="/share-snippet">
+                                        Share Snippet
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/delete-icon.svg">
+                                    <router-link to="/delete-snippet">
+                                        Delete Snippet
+                                    </router-link>
+                                </a>
+                            </div>
+                         </div>
                     </div>
                 </div>
                 <div class="row snippet-item  py-4">
@@ -79,9 +122,50 @@
                     <div class="col-md-4 d-flex justify-content-end align-items-center snippetActions">
                         <button class=" mr-2 btn btn-default btn-sm">Facebook</button>
                         <button class=" mr-2 btn btn-default btn-sm">Email</button>
-                        <span class="ml-3">
-                                 <img src="/assets/images/dots3.svg" alt="">
+                        <div class="btn-group dropleft ml-3">
+                           <span type="button dropleft" class="snippetActions"
+                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/images/dots3.svg" alt="">
                             </span>
+                            <div class="dropdown-menu snippet-actions popup" aria-labelledby="snippetActions">
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/edit-icon.svg">
+                                    <router-link to="/edit-snippet">
+                                        Edit Snippet
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/duplicate-icon.svg">
+                                    <router-link to="/edit-snippet">
+                                        Duplicate Snippet
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/edit-icon-2.svg">
+                                    <router-link to="/edit-snippet">
+                                        Edit Category
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/label_icon.svg">
+                                    <router-link to="/edit-snippet">
+                                        Edit Label
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/share-icon.svg">
+                                    <router-link to="/share-snippet">
+                                        Share Snippet
+                                    </router-link>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="mr-2" src="/assets/images/delete-icon.svg">
+                                    <router-link to="/delete-snippet">
+                                        Delete Snippet
+                                    </router-link>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

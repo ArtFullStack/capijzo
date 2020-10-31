@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_68" data-name="Rectangle 68" width="24" height="24" transform="translate(368 203)" fill="none" stroke="#3d3d3d" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Business_icon" transform="translate(-368 -203)" clip-path="url(#clip-path)">
+    <g id="briefcase" transform="translate(368 203)">
+      <rect id="Rectangle_69" data-name="Rectangle 69" width="20" height="14" rx="2" transform="translate(2 7)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_41" data-name="Path 41" d="M16,21V5a2,2,0,0,0-2-2H10A2,2,0,0,0,8,5V21" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
