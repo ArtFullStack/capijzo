@@ -134,7 +134,7 @@
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 58px;
+        height: 43px;
         border-radius: 10px;
         width: 208px;
     }
@@ -153,7 +153,7 @@
     }
 
     .form-group input.form-control {
-        height: 58px;
+        height: 43px;
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
@@ -176,9 +176,16 @@
     }
 
     .login-with .button-with button {
-        height: 58px;
+        height: 43px;
         border: none;
         background-color: #F5F5F5;
         border-radius: 10px;
+    }
+    @media (min-width: 768px){
+        .col-md-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 44%;
+        }
     }
 </style>

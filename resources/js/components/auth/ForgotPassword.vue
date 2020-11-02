@@ -50,14 +50,9 @@
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 58px;
+        height: 43px;
         border-radius: 10px;
         width: 208px;
-    }
-
-    .line-group .line, .line-group .line-or p {
-        border-color: #B8B8B8;
-        color: #B8B8B8;
     }
 
     .new-here span {
@@ -65,7 +60,7 @@
     }
 
     .form-group input.form-control {
-        height: 58px;
+        height: 43px;
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
@@ -79,12 +74,8 @@
         cursor: pointer;
     }
 
-    .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
-        z-index: 0;
-    }
-
     .login-with .button-with button {
-        height: 58px;
+        height: 43px;
         border: none;
         background-color: #F5F5F5;
         border-radius: 10px;;
