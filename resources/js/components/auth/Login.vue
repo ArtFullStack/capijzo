@@ -1,87 +1,89 @@
 <template>
     <div class="container login-section">
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="login-logo text-center">
-                            <img src="/assets/images/Capijzo-Logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text-center m-0">Welcome Back!</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-center text-center login-continue">Login in to continue</p>
-                    </div>
-                </div>
-                <div class="login-with">
+            <div class="col">
+                <div class="text-center login-content">
                     <div class="row">
-                        <div class="col-md-12 d-flex justify-content-between flex-wrap">
-                            <div class="button-with">
-                                <button class="btn btn-default form-control">
-                                    <img src="/assets/images/facebook.png" width="24" alt="">
-                                    <span>Log in With Facebook</span>
-                                </button>
-                            </div>
-                            <div class="button-with">
-                                <button class="btn btn-default form-control">
-                                    <img src="/assets/images/google.png" width="24" alt="">
-                                    <span>Log in With Google</span>
-                                </button>
+                        <div class="col">
+                            <div class="login-logo text-center">
+                                <img src="/assets/images/Capijzo-Logo.svg" alt="" width="43">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-md-12 d-flex justify-content-between flex-wrap line-group">
-                        <div class="line"></div>
-                        <div class="line-or">
-                            <p>or</p>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center m-0 title">Welcome Back!</h1>
                         </div>
-                        <div class="line"></div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group text-left">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center text-center login-continue">Log in to continue</p>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="password">Password</label>
-                            <div class="input-group password-group mb-2">
-                                <input :type="passwordFieldEye" class="form-control" id="password">
-                                <i class="fa fa-eye-slash" aria-hidden="true"
-                                   @click="() => this.passwordFieldEye = this.passwordFieldEye == 'text' ? 'password' :  'text'"></i>
+                    </div>
+                    <div class="login-with">
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-between flex-wrap">
+                                <div class="button-with">
+                                    <button class="btn btn-default form-control">
+                                        <img src="/assets/images/facebook.png" width="20" alt="">
+                                        <span>Log in With Facebook</span>
+                                    </button>
+                                </div>
+                                <div class="button-with">
+                                    <button class="btn btn-default form-control">
+                                        <img src="/assets/images/google.png" width="20" alt="">
+                                        <span>Log in With Google</span>
+                                    </button>
+                                </div>
                             </div>
-                            <router-link to="/forgot-password">
-                                <span id="forgot-password" class="pt-2">Forgot password?</span>
-                            </router-link>
                         </div>
-                        <router-link to="/dashboard">
-                            <button type="button" id="login" class="btn btn-default">Log in</button>
-                        </router-link>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-center new-here pt-5">
-                            New here?
-                            <router-link to="/register">
-                                <span>Create Account</span>
-                            </router-link>
-                        </p>
+                    <div class="row line-row">
+                        <div class="col-md-12 d-flex justify-content-between flex-wrap line-group">
+                            <div class="line"></div>
+                            <div class="line-or">
+                                <p>or</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group text-left">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="password">Password</label>
+                                <div class="input-group password-group mb-2">
+                                    <input :type="passwordFieldEye" class="form-control" id="password">
+                                    <i class="fa fa-eye-slash" aria-hidden="true"
+                                       @click="() => this.passwordFieldEye = this.passwordFieldEye == 'text' ? 'password' :  'text'"></i>
+                                </div>
+                                <router-link to="/forgot-password">
+                                    <span id="forgot-password" class="pt-2">Forgot password?</span>
+                                </router-link>
+                            </div>
+                            <div class="login-button">
+                                <router-link to="/dashboard">
+                                    <button type="button" id="login" class="btn btn-default">Log in</button>
+                                </router-link>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center new-here pt-5">
+                                New here?
+                                <router-link to="/register">
+                                    <span>Create Account</span>
+                                </router-link>
+                            </p>
+                        </div>
+                    </div>
+                    <Footer/>
                 </div>
-                <Footer/>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </div>
 </template>
@@ -101,9 +103,9 @@
     }
 </script>
 
-<style scop.copyrighted>
+<style scoped>
     .line {
-        border-bottom: 1px solid;
+        border-bottom: 2px solid;
         width: 47%;
     }
 
@@ -111,10 +113,18 @@
         position: relative;
     }
 
+    .login-button {
+        margin-top: 30px;
+    }
+
     .line-or p {
         position: absolute;
         bottom: -25px;
         left: -8px;
+    }
+
+    .line-row {
+        margin: 32px 0;
     }
 
     .button-with {
@@ -133,10 +143,8 @@
         border-radius: 10px;
     }
 
-    .login-continue {
-        font-size: 20px;
-        color: #B8B8B8;
-        margin: 20px 0;
+    .title {
+        font-weight: 700;
     }
 
     #login {
@@ -144,11 +152,13 @@
         color: white;
         border: none;
         border-radius: 10px;
-        width: 208px;
+        width: 170px;
+        height: 45px;
+        font-size: 13px;
     }
 
     .line-group .line, .line-group .line-or p {
-        border-color: #B8B8B8;
+        border-color: #dfdfdf;
         color: #B8B8B8;
     }
 
@@ -165,6 +175,7 @@
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
+        height: 45px;
     }
 
     .password-group {
@@ -174,13 +185,13 @@
     .password-group i {
         position: absolute;
         right: 18px;
-        top: 10px;
-        font-size: 20px;
+        top: 14px;
+        font-size: 16px;
         cursor: pointer;
     }
 
     #forgot-password {
-        color: #DB4C3F
+        color: #DB4C3F;
     }
 
     .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
@@ -191,15 +202,17 @@
         border: none;
         background-color: #F5F5F5;
         border-radius: 10px;
-        font-size: 14px;
+        height: 45px;
     }
 
-    @media (min-width: 768px) {
-        .col-md-6 {
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 44%;
-        }
+    .login-content {
+        width: 430px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .form-group label {
+        font-weight: 600;
     }
 
 </style>

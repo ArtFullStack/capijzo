@@ -1,5 +1,4 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Inter');
 
 // Variables
 @import 'variables';
@@ -14,10 +13,14 @@
 
 // AdminLTE
 @import '~admin-lte/dist/css/adminlte.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@font-face {
-    font-family: Inter;
-    src: url('https://fonts.googleapis.com/css?family=Inter');
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+
+a, p, span, label, button {
+    font-size: 13px;
 }
 
 body {
@@ -31,6 +34,12 @@ a {
 a:hover {
     text-decoration: none;
     color: #3D3D3D;
+}
+.login-continue {
+    font-size: 16px;
+    color: #B8B8B8;
+    margin: 20px 0 30px 0;
+    font-weight: 500;
 }
 
 
@@ -111,7 +120,6 @@ a:hover {
 }
 
 .r-soon {
-    font-size: 14px;
     color: #B8B8B8
 }
 
@@ -181,7 +189,6 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .buttons button {
-    font-size: 14px;
     padding: 13px;
     border-radius: 10px;
     border: none;
