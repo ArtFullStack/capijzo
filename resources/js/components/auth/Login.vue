@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row py-5">
+                <div class="row py-3">
                     <div class="col-md-12 d-flex justify-content-between flex-wrap line-group">
                         <div class="line"></div>
                         <div class="line-or">
@@ -101,7 +101,7 @@
     }
 </script>
 
-<style scoped>
+<style scop.copyrighted>
     .line {
         border-bottom: 1px solid;
         width: 47%;
@@ -126,20 +126,23 @@
     }
 
     .login-section {
-        padding-top: 100px;
+        padding-top: 30px;
+    }
+
+    #password {
+        border-radius: 10px;
     }
 
     .login-continue {
         font-size: 20px;
         color: #B8B8B8;
-        margin: 40px 0;
+        margin: 20px 0;
     }
 
     #login {
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 43px;
         border-radius: 10px;
         width: 208px;
     }
@@ -159,7 +162,6 @@
     }
 
     .form-group input.form-control {
-        height: 43px;
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
@@ -172,7 +174,7 @@
     .password-group i {
         position: absolute;
         right: 18px;
-        top: 18px;
+        top: 10px;
         font-size: 20px;
         cursor: pointer;
     }
@@ -186,12 +188,13 @@
     }
 
     .login-with .button-with button {
-        height: 43px;
         border: none;
         background-color: #F5F5F5;
-        border-radius: 10px;;
+        border-radius: 10px;
+        font-size: 14px;
     }
-    @media (min-width: 768px){
+
+    @media (min-width: 768px) {
         .col-md-6 {
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;

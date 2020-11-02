@@ -266,14 +266,13 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .form-group .form-control, .multiselect {
-    height: 58px;
     border-radius: 10px;
     border: none;
     background-color: #fff;
 }
 
 .multiselect .multiselect__select {
-    height: 58px;
+    //height: 58px;
 }
 
 .multiselect .multiselect__tags {

@@ -15,7 +15,7 @@
 
 <style scoped>
     .copyright {
-        margin: 100px 0 60px 0
+        margin: 67px 0 60px 0
     }
 
     .copyright span:first-child {
