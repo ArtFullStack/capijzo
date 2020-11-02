@@ -74,9 +74,30 @@
                                 </div>
                             </div>
                             <div v-if="currentTab === 'weekly'">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="table-responsive">
+                                            <table class="borderless table weekly-score mb-0">
+                                                <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Saved Time</th>
+                                                    <th>Words Inserted</th>
+                                                    <th>WPN</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr v-for="day in weekDays">
+                                                    <td>{{day.day}}</td>
+                                                    <td>{{day.saved_time}} Mins</td>
+                                                    <td>{{day.word_inserted}} Words</td>
+                                                    <td>{{day.wpm}}</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,7 +220,51 @@
                     {title: 'Daily', value: 'daily'},
                     {title: 'Weekly', value: 'weekly'},
                 ],
-                currentTab: 'daily'
+                currentTab: 'daily',
+                weekDays: [
+                    {
+                        day:  'Mon',
+                        saved_time: 30,
+                        word_inserted: 2534,
+                        wpm: 42
+                    },
+                    {
+                        day:  'Tue',
+                        saved_time: 32,
+                        word_inserted: 2734,
+                        wpm: 41
+                    },
+                    {
+                        day: 'Wed',
+                        saved_time: 27,
+                        word_inserted: 2345,
+                        wpm: 42
+                    },
+                    {
+                        day: 'Thu',
+                        saved_time: 28,
+                        word_inserted: 2387,
+                        wpm: 42
+                    },
+                    {
+                        day: 'Fri',
+                        saved_time: 40,
+                        word_inserted: 2967,
+                        wpm: 41
+                    },
+                    {
+                        day: 'Sat',
+                        saved_time: 40,
+                        word_inserted: 2967,
+                        wpm: 41
+                    },
+                    {
+                        day: 'Sun',
+                        saved_time: '00',
+                        word_inserted: '--',
+                        wpm: '00'
+                    }
+                ]
             }
         },
 
