@@ -2,7 +2,7 @@
     <aside class="main-sidebar sidebar-light-info">
         <!-- Brand Logo -->
         <router-link to="/dashboard" class="brand-link">
-            <img src="/assets/images/Capijzo-Type.svg" alt="">
+            <img src="/assets/images/Capijzo-Type.svg" alt="" width="140">
         </router-link>
 
         <!-- Sidebar -->
@@ -15,7 +15,9 @@
                         <a href="#" class="nav-link">
                             <p>
                                 Categories
-                                <i class="fas fa-angle-left right gray-icon"></i>
+                                <i class="right">
+                                    <img src="/assets/images/arrow-down.svg" alt="">
+                                </i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
@@ -166,7 +168,9 @@
                         <a href="#" class="nav-link">
                             <p>
                                 Labels
-                                <i class="fas fa-angle-left right gray-icon"></i>
+                                <i class="right">
+                                    <img src="/assets/images/arrow-down.svg" alt="">
+                                </i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">

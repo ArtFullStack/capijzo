@@ -35,11 +35,123 @@ a:hover {
     text-decoration: none;
     color: #3D3D3D;
 }
+
 .login-continue {
     font-size: 16px;
     color: #B8B8B8;
     margin: 20px 0 30px 0;
     font-weight: 500;
+}
+
+.line {
+    border-bottom: 2px solid;
+    width: 47%;
+}
+
+.line-or {
+    position: relative;
+}
+
+.login-button {
+    margin-top: 30px;
+}
+
+.line-or p {
+    position: absolute;
+    bottom: -25px;
+    left: -8px;
+}
+
+.line-row {
+    margin: 32px 0;
+}
+
+.button-with {
+    width: 47%;
+}
+
+.button-with span {
+    vertical-align: middle;
+}
+
+.auth-section {
+    padding-top: 30px;
+}
+
+#password {
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+#login {
+    background-color: #DB4C3F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 170px;
+    height: 45px;
+    font-size: 13px;
+}
+
+.line-group .line, .line-group .line-or p {
+    border-color: #dfdfdf;
+    color: #B8B8B8;
+}
+
+.new-here {
+    color: #B8B8B8;
+    margin: 0;
+}
+
+.new-here span {
+    color: #DB4C3F
+}
+
+.form-group input.form-control {
+    border-radius: 10px;
+    border: none;
+    background-color: #F5F5F5;
+    height: 45px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group i {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#forgot-password {
+    color: #DB4C3F;
+}
+
+.input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
+    z-index: 0;
+}
+
+.login-with .button-with button {
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    height: 45px;
+}
+
+.auth-content {
+    width: 430px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-weight: 600 !important;
 }
 
 
@@ -65,11 +177,11 @@ a:hover {
 
 .main-header {
     border: none;
-    height: 88px;
+    height: 70px;
 }
 
 .main-header .dropdown i {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .gray-icon {
@@ -78,19 +190,22 @@ a:hover {
 
 .red-icon {
     color: #cc2246;
+    font-size: 10px;
 }
 
 .user-name {
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #search-input {
-    width: 670px;
-    height: 58px;
+    width: 480px;
     background: #f5f5f5;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 45px;
+    font-size: 13px;
 }
 
 .search-btn {
@@ -107,6 +222,15 @@ a:hover {
     color: #777;
 }
 
+.nav-sidebar .nav-link i.right {
+    right: 27px;
+}
+
+.nav-sidebar .nav-link i.right img {
+    transform: rotate(90deg);
+    width: 16px;
+}
+
 .nav-sidebar .nav-treeview .item-hover span {
     display: none;
 }
@@ -119,26 +243,41 @@ a:hover {
     background: #f5f5f5;
 }
 
+.content-header {
+    padding: 35px;
+}
+
+.content-header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+}
+
+
 .r-soon {
     color: #B8B8B8
 }
 
 .main-sidebar .brand-link {
     height: 88px;
-    padding-left: 48px;
+    padding-left: 40px;
 }
 
 .main-sidebar .sidebar {
-    padding-left: 32px;
+    padding-left: 25px;
 }
 
 .main-sidebar {
-    width: 346px;
+    width: 280px;
+}
+
+.main-sidebar .sidebar img {
+    width: 20px;
 }
 
 
 body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-footer, body:not(.sidebar-mini-md) .main-header {
-    margin-left: 346px;
+    margin-left: 280px;
 }
 
 .item-hover {
@@ -152,7 +291,7 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .item-hover span:first-child {
-    left: -12px;
+    left: -10px;
     top: 5px;
 }
 
@@ -170,27 +309,32 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .snippet-item p span {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .snippet-item button {
     border: none;
     border-radius: 5px;
     background-color: #fff;
+    font-size: 12px;
+    padding: 4px 9px;
 }
 
 .navbar-badge {
     top: 2px;
-    width: 18px;
-    height: 18px;
-    line-height: 15px;
+    width: 16px;
+    height: 16px;
+    line-height: 13px;
     border-radius: 50%;
     background-color: #DB4C3F;
+    font-size: 9px;
 }
 
 .buttons button {
-    padding: 13px;
+    padding: 10px 15px;
     border-radius: 10px;
+    font-size: 12px;
     border: none;
     background-color: #fff;
 }
@@ -198,6 +342,10 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 .buttons button.add_snippet {
     background-color: #DB4C3F;
     color: #fff;
+}
+
+.buttons button img {
+    width: 13px;
 }
 
 .buttons .dropdown-menu {
@@ -209,11 +357,15 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 }
 
 .dropdown-item {
-    padding: 12px 24px;
+    padding: 8px 18px;
 }
 
 .snippetActions span {
     cursor: pointer;
+}
+
+.snippetActions img {
+    width: 20px;
 }
 
 .popup {
@@ -258,7 +410,7 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
     vertical-align: bottom;
 }
 
-label:not(.form-check-label):not(.custom-file-label) {
+mr-3 {
     font-weight: normal;
 }
 

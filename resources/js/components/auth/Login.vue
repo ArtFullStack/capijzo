@@ -1,8 +1,8 @@
 <template>
-    <div class="container login-section">
+    <div class="container auth-section">
         <div class="row">
             <div class="col">
-                <div class="text-center login-content">
+                <div class="text-center auth-content">
                     <div class="row">
                         <div class="col">
                             <div class="login-logo text-center">
@@ -102,117 +102,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .line {
-        border-bottom: 2px solid;
-        width: 47%;
-    }
-
-    .line-or {
-        position: relative;
-    }
-
-    .login-button {
-        margin-top: 30px;
-    }
-
-    .line-or p {
-        position: absolute;
-        bottom: -25px;
-        left: -8px;
-    }
-
-    .line-row {
-        margin: 32px 0;
-    }
-
-    .button-with {
-        width: 47%;
-    }
-
-    .button-with span {
-        vertical-align: middle;
-    }
-
-    .login-section {
-        padding-top: 30px;
-    }
-
-    #password {
-        border-radius: 10px;
-    }
-
-    .title {
-        font-weight: 700;
-    }
-
-    #login {
-        background-color: #DB4C3F;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        width: 170px;
-        height: 45px;
-        font-size: 13px;
-    }
-
-    .line-group .line, .line-group .line-or p {
-        border-color: #dfdfdf;
-        color: #B8B8B8;
-    }
-
-    .new-here {
-        color: #B8B8B8;
-        margin: 0;
-    }
-
-    .new-here span {
-        color: #DB4C3F
-    }
-
-    .form-group input.form-control {
-        border-radius: 10px;
-        border: none;
-        background-color: #F5F5F5;
-        height: 45px;
-    }
-
-    .password-group {
-        position: relative;
-    }
-
-    .password-group i {
-        position: absolute;
-        right: 18px;
-        top: 14px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    #forgot-password {
-        color: #DB4C3F;
-    }
-
-    .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
-        z-index: 0;
-    }
-
-    .login-with .button-with button {
-        border: none;
-        background-color: #F5F5F5;
-        border-radius: 10px;
-        height: 45px;
-    }
-
-    .login-content {
-        width: 430px;
-        padding: 0 10px;
-        margin: 0 auto;
-    }
-
-    .form-group label {
-        font-weight: 600;
-    }
-
-</style>

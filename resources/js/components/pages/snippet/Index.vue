@@ -1,7 +1,7 @@
 <template>
     <div class="content-wrapper">
         <div class="content-header">
-            <div class="container-fluid p-5">
+            <div class="container-fluid">
                 <div class="row mb-5">
                     <div class="col-md-6">
                         <h1 class="m-0 text-dark">My Snippets</h1>
@@ -21,7 +21,7 @@
                                 </div>
                                 <router-link to="/add-snippet">
                                     <button class="btn btn-default add_snippet ml-3">
-                                        + Add Snippet
+                                        <img src="/assets/images/plus-image.svg" alt=""> Add Snippet
                                     </button>
                                 </router-link>
                             </div>
@@ -39,11 +39,11 @@
 
                     </div>
                 </div>
-                <div class="row snippet-item py-4">
+                <div class="row snippet-item pt-2 pb-3">
                     <div class="col-md-4 d-flex align-items-center">
                         <p>
                             <i class="fas fa-circle text-danger"></i>
-                            <span class="ml-3">Prospecting email script</span>
+                            <span class="ml-2">Prospecting email script</span>
                         </p>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
@@ -111,9 +111,9 @@
                          </div>
                     </div>
                 </div>
-                <div class="row snippet-item  py-4">
+                <div class="row snippet-item  py-3">
                     <div class="col-md-4">
-                        <p><i class="fas fa-circle text-warning"></i> <span class="ml-3">Client connection request - linked in</span>
+                        <p><i class="fas fa-circle text-warning"></i> <span class="ml-2">Client connection request - linked in</span>
                         </p>
                     </div>
                     <div class="col-md-4">

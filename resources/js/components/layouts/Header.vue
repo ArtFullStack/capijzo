@@ -5,11 +5,11 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
-        <form class="form-inline ml-3">
+        <form class="form-inline ml-5">
             <div class="input-group">
                 <div class="input-group-prepend">
                     <button class="btn btn-navbar search-btn" type="button">
-                        <i class="fas fa-search gray-icon"></i>
+                        <img src="/assets/images/Search_icon.svg" alt="" width="20">
                     </button>
                 </div>
                 <input class="form-control form-control-navbar" type="search" id="search-input"
@@ -124,7 +124,7 @@
                 <a class="align-items-center" role="button" data-toggle="dropdown">
                     <img
                         src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg"
-                        class="rounded-circle" alt="User Image" width="48">
+                        class="rounded-circle" alt="User Image" width="42">
                     <span class="hidden-xs px-2 user-name">Ezzeldeen Ahmed</span>
                     <img src="/assets/images/Arrow_icon.svg" alt="">
                 </a>
