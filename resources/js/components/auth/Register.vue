@@ -6,11 +6,11 @@
                     <div class="row">
                         <div class="col">
                             <div class="login-logo text-center">
-                                <img src="/assets/images/Capijzo-Logo.svg" alt="" width="43">
+                                <img src="/assets/images/Capijzo-Logo.svg" alt="" width="45">
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-2">
                         <div class="col">
                             <h1 class="text-center m-0 title">Create Your Account</h1>
                         </div>

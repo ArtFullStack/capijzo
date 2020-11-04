@@ -39,7 +39,7 @@
 <style scoped>
 
     .category-colors span i {
-        font-size: 38px;
+        font-size: 32px;
         margin: 0 10px 20px;
     }
     .discard a {
@@ -52,7 +52,7 @@
     }
 
     .separateModal .title {
-        font-size: 38px;
+        font-size: 32px;
         margin-bottom: 13px;
     }
 
@@ -70,7 +70,6 @@
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 58px;
         border-radius: 10px;
         width: 100%;
     }
@@ -84,12 +83,6 @@
         color: #DB4C3F
     }
 
-    .form-group input.form-control {
-        height: 58px;
-        border-radius: 10px;
-        border: none;
-        background-color: #F5F5F5;
-    }
 
     .password-group i {
         position: absolute;
@@ -99,38 +92,8 @@
         cursor: pointer;
     }
 
-    .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
-        z-index: 0;
-    }
-
-    .login-with .button-with button {
-        height: 58px;
-        border: none;
-        background-color: #F5F5F5;
-        border-radius: 10px;;
-    }
-
     .card {
         border-radius: 20px
     }
 
-    i.fas.fa-circle{
-        position: relative;
-    }
-    i.fas.fa-circle:after {
-        width: 47px;
-        height: 47px;
-        content: '';
-        display: none;
-        border: 1px solid;
-        border-radius: 50%;
-        left: -4px;
-        top: -5px;
-        position: absolute;
-        cursor: pointer;
-    }
-
-    i.fas.fa-circle:hover:after{
-        display: block;
-    }
 </style>

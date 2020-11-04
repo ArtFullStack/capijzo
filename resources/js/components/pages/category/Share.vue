@@ -43,7 +43,7 @@
                             </div>
                         </div>
                     </div>
-                    <p>Members</p>
+                    <label>Members</label>
 
                     <div class="members">
                         <div class="member d-flex justify-content-between">
@@ -129,6 +129,7 @@
         background: none;
         border: none;
         padding: 0;
+        font-size: 14px;
     }
 
     .permissionAddon {
@@ -182,7 +183,7 @@
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 58px;
+        height: 50px;
         border-radius: 10px;
         width: 100%;
     }
@@ -201,7 +202,7 @@
     }
 
     .form-group input.form-control {
-        height: 58px;
+        height: 50px;
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
@@ -220,7 +221,7 @@
     }
 
     .login-with .button-with button {
-        height: 58px;
+        height: 50px;
         border: none;
         background-color: #F5F5F5;
         border-radius: 10px;;
@@ -231,6 +232,6 @@
     }
 
     .members .member {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 </style>

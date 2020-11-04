@@ -2,7 +2,7 @@
     <div class="row forgotPasswordModal align-items-center m-0">
         <div class="col-md-4 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body py-5 px-5">
+                <div class="card-body">
                     <div class="card_header d-flex justify-content-between">
                         <h2 class="title">Edit Category</h2>
                         <div class="discard">
@@ -20,12 +20,14 @@
                             </div>
                             <div class="col-md-4">
                                 <router-link to="/dashboard">
-                                    <button type="button" id="add-category-button" class="btn btn-default">Edit Category</button>
+                                    <button type="button" id="add-category-button" class="btn btn-default">Edit
+                                        Category
+                                    </button>
                                 </router-link>
                             </div>
                         </div>
                     </div>
-                    <p>Category color</p>
+                    <label>Category color</label>
 
                     <div class="category-colors">
                         <span v-for="color in colors">
@@ -49,7 +51,6 @@
         },
 
 
-
         mounted() {
             for (let i = 0; i < 12; i++) {
                 this.randomColor(i)
@@ -68,11 +69,16 @@
 <style scoped>
 
     .category-colors span i {
-        font-size: 38px;
+        font-size: 32px;
         margin: 0 10px 20px;
     }
+
     .discard a {
         color: #DB4C3F;
+    }
+
+    .card-body {
+        padding: 38px 38px 18px
     }
 
     .forgotPasswordModal {
@@ -81,7 +87,7 @@
     }
 
     .forgotPasswordModal .title {
-        font-size: 38px;
+        font-size: 32px;
         margin-bottom: 13px;
     }
 
@@ -99,7 +105,7 @@
         background-color: #DB4C3F;
         color: white;
         border: none;
-        height: 58px;
+        height: 50px;
         border-radius: 10px;
         width: 100%;
     }
@@ -114,7 +120,6 @@
     }
 
     .form-group input.form-control {
-        height: 58px;
         border-radius: 10px;
         border: none;
         background-color: #F5F5F5;
@@ -132,23 +137,17 @@
         z-index: 0;
     }
 
-    .login-with .button-with button {
-        height: 58px;
-        border: none;
-        background-color: #F5F5F5;
-        border-radius: 10px;;
-    }
-
     .card {
         border-radius: 20px
     }
 
-    i.fas.fa-circle{
+    i.fas.fa-circle {
         position: relative;
     }
+
     i.fas.fa-circle:after {
-        width: 47px;
-        height: 47px;
+        width: 42px;
+        height: 42px;
         content: '';
         display: none;
         border: 1px solid;
@@ -159,7 +158,7 @@
         cursor: pointer;
     }
 
-    i.fas.fa-circle:hover:after{
+    i.fas.fa-circle:hover:after {
         display: block;
     }
 </style>
