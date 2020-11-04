@@ -15,6 +15,7 @@ import AddLabel from "./components/pages/label/Add";
 import EditLabel from "./components/pages/label/Edit";
 import ShareLabel from "./components/pages/label/Share";
 import DeleteLabel from "./components/pages/label/Delete";
+import MyAccount from "./components/pages/settings/MyAccounts";
 
 const router = new VueRouter({
 
@@ -86,7 +87,11 @@ const router = new VueRouter({
         {
             path: '/delete-label',
             component: DeleteLabel
-        }
+        },
+        {
+            path: '/settings/my-account',
+            component: MyAccount
+        },
     ],
     mode: 'history'
 });

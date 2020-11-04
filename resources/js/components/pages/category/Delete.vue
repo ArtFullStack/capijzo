@@ -1,6 +1,6 @@
 <template>
     <div class="row forgotPasswordModal align-items-center m-0">
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
                 <div class="card-body py-4 px-4">
                     <p>Are you sure you want to delete "Sales" Category</p>

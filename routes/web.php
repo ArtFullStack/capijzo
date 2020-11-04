@@ -17,4 +17,9 @@ Auth::routes();
 Route::any('/{any?}', function () {
     return view('layouts.app');
 });
+Route::group(['prefix' => 'settings'], function () {
+    Route::any('/{any?}', function () {
+        return view('layouts.app');
+    });
+});
 

@@ -1,8 +1,8 @@
 <template>
     <div class="row forgotPasswordModal align-items-center m-0">
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body py-5 px-5">
+                <div class="card-body p-5">
                     <h2 class="title">Forgot Password</h2>
                     <p>Type your email so we can send you a code to reset your password</p>
                     <div class="form-group text-left my-5">

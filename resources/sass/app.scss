@@ -114,6 +114,31 @@ a:hover {
     border-radius: 10px;
     border: none;
     height: 50px;
+    font-size: 14px;
+}
+
+.add-button {
+    background-color: #DB4C3F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.separateModal .title {
+    font-size: 32px;
+    margin-bottom: 13px;
+}
+
+#add-category-button {
+    background-color: #DB4C3F;
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .password-group {
@@ -196,6 +221,27 @@ a:hover {
     vertical-align: middle;
     font-size: 16px;
     font-weight: 600;
+}
+
+.alert-buttons button {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 208px;
+}
+
+.alert-buttons .cancel button {
+    background: white;
+}
+
+.separateModal {
+    height: 100vh;
+    background: #C3C3C3;
+}
+
+.delete-button {
+    background-color: #DB4C3F;
+    color: white;
 }
 
 #search-input {
@@ -293,7 +339,8 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
     left: 7px;
     top: 5px;
 }
-.item-hover span[role=button]{
+
+.item-hover span[role=button] {
     left: -10px;
 }
 
@@ -586,4 +633,67 @@ mr-3 {
 
 .borderless tbody td, .borderless thead th {
     border: none;
+}
+
+.settings-page {
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+}
+
+.settings-page-header {
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+}
+
+.settings-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+.settings-container .personal-info {
+    font-weight: 600;
+}
+
+.settings-sidebar {
+    width: 85%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.settings-sidebar {
+    padding: 20px;
+}
+
+.settings-sidebar p {
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    margin-bottom: 5px;
+    opacity: .5;
+    transition: .2s;
+}
+
+.settings-sidebar p span {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.settings-sidebar p:hover {
+    border-color: #DB4C3F;
+    opacity: 1;
+}
+
+.settings-sidebar p img {
+    margin-right: 10px;
+}
+
+.settings-sidebar .business-title {
+    color: #DB4C3F;
+    font-weight: 500;
+    padding: 10px 20px 20px;
+}
+
+.settings-sidebar .business-title span {
+    font-size: 13px;
 }

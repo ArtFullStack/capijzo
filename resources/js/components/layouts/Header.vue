@@ -129,10 +129,12 @@
                     <img src="/assets/images/Arrow_icon.svg" alt="">
                 </a>
                 <div class="dropdown-menu dropdown-menu-left dropdown-menu-lg popup">
-                    <a href="#" class="dropdown-item">
-                        <img src="/assets/images/Setting_icon.svg" alt="">
-                        <span class="ml-3">Settings</span>
-                    </a>
+                    <router-link to="/settings/my-account">
+                        <a href="#" class="dropdown-item">
+                            <img src="/assets/images/Setting_icon.svg" alt="">
+                            <span class="ml-3">Settings</span>
+                        </a>
+                    </router-link>
                     <a href="#" class="dropdown-item">
                         <img src="/assets/images/Sync_icon.svg" alt="">
                         <span class="ml-3">Sync</span>

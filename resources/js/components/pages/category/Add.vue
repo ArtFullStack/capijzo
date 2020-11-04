@@ -1,6 +1,6 @@
 <template>
     <div class="row forgotPasswordModal align-items-center m-0">
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
                 <div class="card-body">
                     <div class="card_header d-flex justify-content-between">

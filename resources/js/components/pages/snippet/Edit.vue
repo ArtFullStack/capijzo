@@ -4,7 +4,7 @@
         <Sidebar/>
         <div class="content-wrapper">
             <div class="content-header">
-                <div class="container-fluid p-5">
+                <div class="container-fluid p-4">
                     <div class="row mb-5">
                         <div class="col-md-6">
                             <h1 class="m-0 text-dark">Edit a Snippet</h1>
