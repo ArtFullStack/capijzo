@@ -16,6 +16,15 @@ import EditLabel from "./components/pages/label/Edit";
 import ShareLabel from "./components/pages/label/Share";
 import DeleteLabel from "./components/pages/label/Delete";
 import MyAccount from "./components/pages/settings/MyAccounts";
+import ChangePassword from "./components/pages/settings/ChangePassword";
+import GeneralSettings from "./components/pages/settings/GeneralSettings";
+import Subscription from "./components/pages/settings/Subscription";
+import Notifications from "./components/pages/settings/Notifications";
+import AppShortcuts from "./components/pages/settings/AppShortcuts";
+import TeamMembers from "./components/pages/settings/TeamMembers";
+import Reports from "./components/pages/settings/Reports";
+import AccessControl from "./components/pages/settings/AccessControl";
+import AccountBilling from "./components/pages/settings/AccountBilling";
 
 const router = new VueRouter({
 
@@ -91,6 +100,42 @@ const router = new VueRouter({
         {
             path: '/settings/my-account',
             component: MyAccount
+        },
+        {
+            path: '/settings/change-password',
+            component: ChangePassword
+        },
+        {
+            path: '/settings/general-settings',
+            component: GeneralSettings
+        },
+        {
+            path: '/settings/subscription',
+            component: Subscription
+        },
+        {
+            path: '/settings/notifications',
+            component: Notifications
+        },
+        {
+            path: '/settings/app-shortcuts',
+            component: AppShortcuts
+        },
+        {
+            path: '/settings/team-members',
+            component: TeamMembers
+        },
+        {
+            path: '/settings/reports',
+            component: Reports
+        },
+        {
+            path: '/settings/access-control',
+            component: AccessControl
+        },
+        {
+            path: '/settings/account-billing',
+            component: AccountBilling
         },
     ],
     mode: 'history'

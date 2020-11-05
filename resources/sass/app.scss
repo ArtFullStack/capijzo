@@ -423,12 +423,12 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 
 .notify-popup {
     width: 466px;
-    height: 411px;
+    height: 375px;
 }
 
 .notify-popup .dropdown-content {
     width: 466px;
-    height: 411px;
+    height: 375px;
 }
 
 .productivity-popup {
@@ -441,13 +441,13 @@ body:not(.sidebar-mini-md) .content-wrapper, body:not(.sidebar-mini-md) .main-fo
 
 .productivity-popup .score {
     background-color: #F5F5F5;
-    padding: 20px;
-    width: 200px;
+    padding: 15px;
+    width: 150px;
     border-radius: 10px;
 }
 
 .productivity-popup .score .score-value {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -635,6 +635,8 @@ mr-3 {
     border: none;
 }
 
+//settings sidebar
+
 .settings-page {
     width: 100%;
     height: 100%;
@@ -651,6 +653,7 @@ mr-3 {
     width: 1440px;
     margin: 0 auto;
 }
+
 .settings-container .personal-info {
     font-weight: 600;
 }
@@ -679,7 +682,7 @@ mr-3 {
     vertical-align: middle;
 }
 
-.settings-sidebar p:hover {
+.settings-sidebar .router-link-active p {
     border-color: #DB4C3F;
     opacity: 1;
 }
@@ -697,3 +700,175 @@ mr-3 {
 .settings-sidebar .business-title span {
     font-size: 13px;
 }
+
+//my account
+
+.edit-photo {
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.edit-photo span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.edit-photo input {
+    display: none;
+}
+
+.change-password {
+    color: #DB4C3F;
+    font-size: 14px;
+    margin: 0;
+}
+
+.with-account .button-with button {
+    background: #fff;
+}
+
+.login-with .button-with button.delete-account-button {
+    border: 1px solid #DB4C3F;
+    background: none;
+    color: #DB4C3F;
+}
+
+.login-with .button-with button.save-changes {
+    color: #fff;
+    background: #DB4C3F;
+}
+
+.person-img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.settings-content-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.settings-content .multiselect .multiselect__tags {
+    display: block;
+}
+
+.vue-js-switch .v-switch-core {
+    background: #8d8d8d;
+}
+
+.vue-js-switch.toggled .v-switch-core {
+    background: #DB4C3F;
+}
+
+.notification-page p {
+    margin: 0;
+}
+
+.notification-page label {
+    margin: 0;
+}
+
+.notification-page .notify-allow {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.notification-page .email-notify-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+//subscription page
+
+.subscription-section {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.subscription-section p {
+    font-size: 13px;
+}
+
+.subscription-section p.subscription-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #DB4C3F;
+}
+
+.subscription-section p.subscription-section-rate {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subscription-section .current-plan button {
+    font-size: 13px;
+    padding: 10px 30px;
+    background: #DB4C3F;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.subscription-section .current-plan button span {
+    font-size: 13px;
+}
+
+.subscription-section .releasing-soon {
+    color: #DB4C3F;
+}
+
+.subscription-page .download-pdf {
+    color: #DB4C3F;
+}
+
+//App Shortcuts page
+
+.shortcuts-page p {
+    font-size: 13px;
+}
+
+.shortcuts-page .shortcuts-page-titles {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.shortcuts-page #shortcode, .shortcuts-page #number_search, .shortcuts-page #shortcode_search {
+    width: 150px;
+}
+
+.shortcuts-page .change-action {
+    color: #DB4C3F;
+    cursor: pointer;
+    margin: 0;
+}
+
+.shortcuts-page .switch-label-bold {
+    font-weight: 600;
+}
+
+.shortcuts-page .disabled_sites .form-group {
+    position: relative;
+}
+
+.shortcuts-page .disabled_sites .form-group .disable_site {
+    border-radius: 0;
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.shortcuts-page .disabled_sites .form-group .disable_site + span {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+.shortcuts-page .disabled_sites .form-group:hover .disable_site + span {
+    display: block;
+}
+
+
