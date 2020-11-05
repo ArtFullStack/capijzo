@@ -169,14 +169,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <div class="row mb-3">
-                                            <div class="col">
+                                        <div class="row mb-3 align-items-center">
+                                            <div class="col-md-11">
                                                 <h5>Billing Information</h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
                                                 <p class="mb-0">No billing information saved on this account.</p>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <p class="text-right mb-0 update-biiling-info-button">Update</p>
                                             </div>
                                         </div>
                                     </div>

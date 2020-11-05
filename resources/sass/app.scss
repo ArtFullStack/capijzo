@@ -484,6 +484,10 @@ mr-3 {
     height: 50px;
 }
 
+.auth-content .form-group .form-control {
+    background-color: #F5F5F5;
+}
+
 .multiselect .multiselect__select {
     top: 6px;
 }
@@ -827,6 +831,12 @@ mr-3 {
     color: #DB4C3F;
 }
 
+.subscription-page .update-biiling-info-button {
+    color: #DB4C3F;
+    font-size: 13px;
+    cursor: pointer;
+}
+
 //App Shortcuts page
 
 .shortcuts-page p {
@@ -867,6 +877,7 @@ mr-3 {
     cursor: pointer;
     display: none;
 }
+
 .shortcuts-page .disabled_sites .form-group:hover .disable_site + span {
     display: block;
 }
