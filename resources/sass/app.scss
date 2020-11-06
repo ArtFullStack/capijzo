@@ -882,4 +882,66 @@ mr-3 {
     display: block;
 }
 
+//access control page
 
+.access-control .access-control-page-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.access-control-page .switch-label .notify-allow {
+    font-weight: 600;
+}
+
+//reports page
+
+.reports-page .tabs__active-line {
+    background-image: url('/assets/images/report-tab-line.png');
+    width: 123px !important;
+}
+
+.reports-page .tabs .tabs__item {
+    width: 150px !important;
+}
+
+.reports-page .reports-page-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reports-page .report-boxes .report-box-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.reports-page .report-boxes .report-box-item h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.reports-page .weekly-score thead th {
+    color: initial;
+    font-weight: 700;
+    border-top: none;
+    font-size: 14px;
+}
+.reports-page .weekly-score tbody tr td {
+    font-size: 14px;
+}
+
+.reports-page .active-user-report span i {
+    color: #DB4C3F;
+    font-size: 15px;
+}
+.reports-page .active-user-report span i:after {
+    width: 22px;
+    height: 22px;
+    content: '';
+    border: 1px solid;
+    border-radius: 50%;
+    left: 4px;
+    top: 14px;
+    position: absolute;
+    cursor: pointer;
+}
