@@ -2,7 +2,7 @@
     <div class="row separateModal align-items-center m-0">
         <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body p-5">
+                <div class="card-body">
                     <div class="card_header d-flex justify-content-between">
                         <h2 class="title">Edit Label</h2>
                         <div class="discard">
@@ -35,13 +35,3 @@
 <script>
     export default {}
 </script>
-
-<style scoped>
-    .discard a {
-        color: #DB4C3F;
-    }
-
-    .form-group input.form-control {
-        background-color: #F5F5F5;
-    }
-</style>

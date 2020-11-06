@@ -2,7 +2,7 @@
     <div class="row separateModal align-items-center m-0">
         <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body p-5">
+                <div class="card-body">
                     <div class="card_header d-flex justify-content-between">
                         <h2 class="title">Add Label</h2>
                         <div class="discard">
@@ -35,24 +35,3 @@
 <script>
     export default {}
 </script>
-
-<style scoped>
-
-    .category-colors span i {
-        font-size: 32px;
-        margin: 0 10px 20px;
-    }
-    .discard a {
-        color: #DB4C3F;
-    }
-
-    .separateModal {
-        height: 100vh;
-        background: #C3C3C3;
-    }
-
-
-
-
-
-</style>

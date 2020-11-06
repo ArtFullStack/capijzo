@@ -4,9 +4,9 @@
             <div class="card card-block justify-content-center">
                 <div class="card-body">
                     <div class="card_header d-flex justify-content-between">
-                        <h2 class="title">Share</h2>
+                        <h2 class="title">Invite Team Member</h2>
                         <div class="discard">
-                            <router-link to="/dashboard">
+                            <router-link to="/settings/team-members">
                                 Close
                             </router-link>
                         </div>
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <router-link to="/dashboard">
+                                <router-link to="/settings/team-members">
                                     <button type="button" id="add-category-button" class="btn btn-default">Invite
                                     </button>
                                 </router-link>
@@ -48,67 +48,32 @@
                     <div class="members">
                         <div class="member d-flex justify-content-between">
                             <div class="member-info d-flex align-items-center">
-                                <div class="member_image mr-3">
-                                    <img src="/assets/user-images/user1.png" alt="">
-                                </div>
                                 <div class="member_name">
-                                    <span>Richard Smith</span>
+                                    <span>alan.marshall@mail.com</span>
                                 </div>
                             </div>
                             <div class="member_permission">
-                                <span class="owner">Owner</span>
+                                <span class="owner">Administrator</span>
                             </div>
                         </div>
                         <div class="member d-flex justify-content-between">
                             <div class="member-info d-flex align-items-center">
-                                <div class="member_image mr-3">
-                                    <img src="/assets/user-images/user2.png" alt="">
-                                </div>
                                 <div class="member_name">
-                                    <span>Kathryn Murphy</span>
+                                    <span>fionna.oliver@mail.com</span>
                                 </div>
                             </div>
                             <div class="member_permission">
-                                <button class="btn btn-default permissionDropdown" type="button"
-                                        id="permissionDropdown2"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Can view <img src="/assets/images/Arrow_icon.svg" alt="">
-                                </button>
-                                <div class="dropdown-menu"
-                                     aria-labelledby="permissionDropdown2">
-                                    <a class="dropdown-item owner" href="#">Make owner</a>
-                                    <a class="dropdown-item" href="#">Can view</a>
-                                    <a class="dropdown-item" href="#">Can use</a>
-                                    <a class="dropdown-item" href="#">Can edit</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                </div>
+                                <span>Manager</span>
                             </div>
                         </div>
                         <div class="member d-flex justify-content-between">
                             <div class="member-info d-flex align-items-center">
-                                <div class="member_image mr-3">
-                                    <img src="/assets/user-images/user3.png" alt="">
-                                </div>
                                 <div class="member_name">
-                                    <span>Anthony James</span>
+                                    <span>amanda.barrett@mail.com</span>
                                 </div>
                             </div>
                             <div class="member_permission">
-                                <button class="btn btn-default permissionDropdown" type="button"
-                                        id="permissionDropdown3"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Can edit <img src="/assets/images/Arrow_icon.svg" alt="">
-                                </button>
-                                <div class="dropdown-menu"
-                                     aria-labelledby="permissionDropdown3">
-                                    <a class="dropdown-item owner" href="#">Make owner</a>
-                                    <a class="dropdown-item" href="#">Can view</a>
-                                    <a class="dropdown-item" href="#">Can use</a>
-                                    <a class="dropdown-item" href="#">Can edit</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                </div>
+                                <span>User</span>
                             </div>
                         </div>
                     </div>
@@ -122,3 +87,4 @@
 <script>
     export default {}
 </script>
+

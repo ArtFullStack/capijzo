@@ -1,8 +1,8 @@
 <template>
-    <div class="row forgotPasswordModal align-items-center m-0">
+    <div class="row separateModal align-items-center m-0">
         <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body p-5">
+                <div class="card-body">
                     <div class="card_header d-flex justify-content-between">
                         <h2 class="title">Share</h2>
                         <div class="discard">
@@ -122,116 +122,3 @@
 <script>
     export default {}
 </script>
-
-<style scoped>
-
-    .permissionDropdown {
-        background: none;
-        border: none;
-        padding: 0;
-        font-size: 14px;
-    }
-
-    .permissionAddon {
-        position: relative;
-    }
-
-    .member_permission .dropdown-menu {
-        border-radius: 10px;
-    }
-
-    .member_permission .dropdown-menu .dropdown-item {
-        padding: 10px 25px;
-    }
-
-    .permissionAddon .drop-addon {
-        position: absolute;
-        right: 13px;
-        top: 13px;
-    }
-
-    .category-colors span i {
-        font-size: 38px;
-        margin: 0 10px 20px;
-    }
-
-    .discard a {
-        color: #DB4C3F;
-    }
-
-    .forgotPasswordModal {
-        height: 100vh;
-        background: #C3C3C3;
-    }
-
-    .forgotPasswordModal .title {
-        font-size: 38px;
-        margin-bottom: 13px;
-    }
-
-    .line-or p {
-        position: absolute;
-        bottom: -25px;
-        left: -8px;
-    }
-
-    .button-with span {
-        vertical-align: middle;
-    }
-
-    #add-category-button {
-        background-color: #DB4C3F;
-        color: white;
-        border: none;
-        height: 50px;
-        border-radius: 10px;
-        width: 100%;
-    }
-
-    .line-group .line, .line-group .line-or p {
-        border-color: #B8B8B8;
-        color: #B8B8B8;
-    }
-
-    .owner {
-        color: #DB4C3F
-    }
-
-    .new-here span {
-        color: #DB4C3F
-    }
-
-    .form-group input.form-control {
-        height: 50px;
-        border-radius: 10px;
-        border: none;
-        background-color: #F5F5F5;
-    }
-
-    .password-group i {
-        position: absolute;
-        right: 18px;
-        top: 18px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .input-group > .form-control:focus, .input-group > .custom-select:focus, .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
-        z-index: 0;
-    }
-
-    .login-with .button-with button {
-        height: 50px;
-        border: none;
-        background-color: #F5F5F5;
-        border-radius: 10px;;
-    }
-
-    .card {
-        border-radius: 20px
-    }
-
-    .members .member {
-        margin-top: 15px;
-    }
-</style>

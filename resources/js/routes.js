@@ -25,6 +25,7 @@ import TeamMembers from "./components/pages/settings/TeamMembers";
 import Reports from "./components/pages/settings/Reports";
 import AccessControl from "./components/pages/settings/AccessControl";
 import AccountBilling from "./components/pages/settings/AccountBilling";
+import Invite from "./components/pages/settings/Invite";
 
 const router = new VueRouter({
 
@@ -136,6 +137,10 @@ const router = new VueRouter({
         {
             path: '/settings/account-billing',
             component: AccountBilling
+        },
+        {
+            path: '/settings/invite',
+            component: Invite
         },
     ],
     mode: 'history'

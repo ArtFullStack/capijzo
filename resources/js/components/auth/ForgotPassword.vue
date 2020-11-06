@@ -1,8 +1,8 @@
 <template>
-    <div class="row forgotPasswordModal align-items-center m-0">
+    <div class="row separateModal align-items-center m-0">
         <div class="col-md-5 mx-auto">
             <div class="card card-block justify-content-center">
-                <div class="card-body p-5">
+                <div class="card-body">
                     <h2 class="title">Forgot Password</h2>
                     <p>Type your email so we can send you a code to reset your password</p>
                     <div class="form-group text-left my-5">
@@ -26,12 +26,12 @@
 
 <style scoped>
 
-    .forgotPasswordModal{
+    .separateModal{
         height: 100vh;
         background: #C3C3C3;
     }
 
-    .forgotPasswordModal .title{
+    .separateModal .title{
         font-size: 38px;
         margin-bottom: 13px;
     }
